@@ -46,6 +46,7 @@ jobs:
         run: |
           npm run build
           touch out/.nojekyll
+          if [ -f CNAME ]; then cp CNAME out/CNAME; fi
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
