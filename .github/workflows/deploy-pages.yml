@@ -41,10 +41,9 @@ jobs:
 
       - name: Build static site for GitHub Pages
         env:
-          GITHUB_PAGES: "true"
           NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
         run: |
-          npm run build
+          npm run build:pages
           touch out/.nojekyll
           if [ -f CNAME ]; then cp CNAME out/CNAME; fi
 

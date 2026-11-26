@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Inter, Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -26,15 +27,19 @@ export const metadata: Metadata = {
     "Faktry AI catches silent revenue leaks, manages all your operations agents from one board, and builds custom agents tailored to your business.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const reqHeaders = await headers();
+  const nonce = reqHeaders.get("x-nonce") ?? undefined;
+
   return (
     <html
       lang="en"
       className={`${inter.variable} ${plusJakarta.variable} ${jetbrainsMono.variable}`}
+      data-csp-nonce={nonce ? "active" : "static"}
     >
       <body className="font-sans bg-white text-slate-950 selection:bg-emerald-100 selection:text-slate-950">
         {children}
