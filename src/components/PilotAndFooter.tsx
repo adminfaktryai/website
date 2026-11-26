@@ -163,7 +163,7 @@ export function Footer({ onOpenModal }: { onOpenModal: () => void }) {
                   14-Day Leakage Audit
                 </button>
               </li>
-              <li><a href="mailto:hello@faktry.ai" className="hover:text-emerald-700 transition-colors">hello@faktry.ai</a></li>
+              <li><a href="mailto:info@faktryai.com" className="hover:text-emerald-700 transition-colors">info@faktryai.com</a></li>
               <li className="text-slate-500">&copy; 2026 Faktry AI</li>
             </ul>
           </div>
@@ -296,7 +296,7 @@ export function PilotRequestModal({
                 {copied ? "Copied" : "Copy"}
               </button>
               <a
-                href={`mailto:hello@faktry.ai?subject=${encodeURIComponent(
+                href={`mailto:info@faktryai.com?subject=${encodeURIComponent(
                   "Faktry AI 14-Day Pilot"
                 )}&body=${encodeURIComponent(submittedBrief)}`}
                 className="inline-flex items-center gap-1.5 rounded-full bg-emerald-600 px-4 py-2 text-xs font-semibold text-white hover:bg-emerald-500"
