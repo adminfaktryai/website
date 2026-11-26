@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Next.js build outputs
+.next/
+out/
+
+# TypeScript & caches
+tsconfig.tsbuildinfo
+next-env.d.ts
+
+# macOS & env files
+.DS_Store
+.env*
+!.env.example

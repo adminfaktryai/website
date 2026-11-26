@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #0f172a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.hero-aura {
+  background:
+    radial-gradient(ellipse 70% 55% at 15% 15%, rgba(16, 185, 129, 0.12) 0%, transparent 65%),
+    radial-gradient(ellipse 65% 55% at 88% 10%, rgba(37, 99, 235, 0.10) 0%, transparent 60%),
+    linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.brand-gradient-card {
+  background:
+    radial-gradient(circle at 88% 18%, rgba(16, 185, 129, 0.28) 0%, transparent 45%),
+    radial-gradient(circle at 12% 85%, rgba(56, 189, 248, 0.22) 0%, transparent 48%),
+    linear-gradient(135deg, #0b1324 0%, #102a3c 55%, #064e3b 100%);
+}
+
+.orb-sage {
+  background: radial-gradient(circle at 30% 28%, #a7f3d0 0%, #10b981 38%, #0284c7 85%);
+}
+
+.orb-copper {
+  background: radial-gradient(circle at 32% 30%, #fde68a 0%, #f59e0b 40%, #d97706 85%);
+}
+
+.orb-iris {
+  background: radial-gradient(circle at 30% 28%, #dbeafe 0%, #3b82f6 42%, #4f46e5 85%);
+}
